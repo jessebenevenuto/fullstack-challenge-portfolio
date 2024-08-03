@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --base-gray-300: hsl(224, 12%, 18%);
+    --base-gray-500: hsl(223, 13%, 78%);
+    --base-gray-600: hsl(223, 14%, 90%);
+}
+
+body {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+/* .wrapper {
+    width: 112.6rem;
+
+    margin: 0 auto;
+} */
+
+.techs ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    list-style: none;
+}
+
+.techs ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
+
+    /* background: var(--base-gray-300); */
+    border: 1px solid purple;
+
+    padding: .8rem 1.6rem;
+    border-radius: 99rem;
+
+    color: var(--base-gray-500);
+}
+
+.jobs {
+    display: grid;
+    grid-template-columns: repeat(3, 33rem);
+    justify-content: center;
+    gap: 2.4rem;
+}
+
+.job {
+    /* background: var(--base-gray-300); */
+    border: 1px solid purple;
+
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+}
+
+.job img {
+    width: 100%;
+
+    border-radius: .8rem;
+}
+
+.job h5 {
+    color: var(--base-gray-600);
+}
+
+.job p {
+    color: var(--base-gray-500);
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 2.4rem;
+}
+
+.service {
+    padding: 2rem;
+    border: 1px solid purple;
+    border-radius: 1.2rem;
+}
+
+.social ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 40rem;
+
+    border: 1px solid purple;
+    border-radius: .8rem;
+    padding: 1.2rem;
+    margin: 0 auto;
+
+    text-decoration: none;
+}
+
+.social ul li + li {
+    margin-top: 1.6rem;
+}

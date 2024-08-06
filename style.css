@@ -17,11 +17,47 @@ body {
     text-align: center;
 }
 
-/* .wrapper {
+.wrapper {
     width: 112.6rem;
 
     margin: 0 auto;
-} */
+}
+
+.image-wrapper {
+    display: inline-block;
+    justify-content: center;
+
+    position: relative;
+}
+
+header {
+    padding-top: 12rem;
+}
+
+header > div img:nth-child(2) {
+    width: 3.2rem;
+    height: 3.2rem;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    z-index: 100;
+}
+
+.text-wrapper {
+    margin-top: 5.6rem;
+}
+
+.text-wrapper h1 {
+    margin-top: .8rem;
+}
+
+.text-wrapper p:last-child {
+    width: 68rem;
+
+    margin: 2rem auto 0;
+}
 
 .techs ul {
     display: flex;
@@ -30,6 +66,8 @@ body {
     gap: 16px;
 
     list-style: none;
+
+    margin-top: 8rem;
 }
 
 .techs ul li {
@@ -45,6 +83,30 @@ body {
     border-radius: 99rem;
 
     color: var(--base-gray-500);
+}
+
+header > img {
+    margin-top: 9.4rem;
+}
+
+main.wrapper {
+    margin-block: 6rem;
+}
+
+section {
+    padding-block: 10rem;
+}
+
+section h4 {
+    margin-top: .8rem;
+}
+
+section > div {
+    margin-top: 5.6rem;
+}
+
+#contact > p {
+    margin-top: .8rem;
 }
 
 .jobs {
@@ -68,16 +130,26 @@ body {
     border-radius: .8rem;
 }
 
+.job h5,
+.job p {
+    text-align: start;
+}
+
 .job h5 {
+    margin-top: 2.4rem;
+
     color: var(--base-gray-600);
 }
 
 .job p {
+    margin-top: .8rem;
+
     color: var(--base-gray-500);
 }
 
 .services {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 28rem);
     justify-content: center;
     gap: 2.4rem;
 }
@@ -88,10 +160,32 @@ body {
     border-radius: 1.2rem;
 }
 
+.service h5,
+.service p {
+    text-align: start;
+}
+
+.service h5 {
+    margin-top: 2rem;
+}
+
+.service p {
+    margin-top: .8rem;
+}
+
+.social ul li {
+    list-style: none;
+}
+
+.social ul li + li {
+    margin-top: 1.6rem;
+}
+
 .social ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 1.2rem;
     
     width: 40rem;
 
@@ -103,6 +197,8 @@ body {
     text-decoration: none;
 }
 
-.social ul li + li {
-    margin-top: 1.6rem;
+.social ul a p {
+    width: 28rem;
+    text-align: start;
 }
+

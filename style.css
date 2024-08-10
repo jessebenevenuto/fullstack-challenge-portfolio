@@ -8,11 +8,15 @@
     font-size: 62.5%;
 
     --base-gray-300: hsl(224, 12%, 18%);
+    --base-gray-400: hsl(224, 12%, 58%);
     --base-gray-500: hsl(223, 13%, 78%);
     --base-gray-600: hsl(223, 14%, 90%);
+    --main-red: hsl(355, 69%, 64%);
+    --main-purple: hsl(277, 73%, 68%);
 }
 
 body {
+    font-family: 'Maven Pro', sans-serif;
     font-size: 1.6rem;
     text-align: center;
 }
@@ -28,6 +32,13 @@ body {
     justify-content: center;
 
     position: relative;
+}
+
+.image-wrapper img:first-child {
+    border: 2px solid var(--main-red);
+    border-radius: 50%;
+
+    padding: .4rem;
 }
 
 header {
@@ -49,14 +60,34 @@ header > div img:nth-child(2) {
     margin-top: 5.6rem;
 }
 
+.text-wrapper p:first-child {
+    font-family: 'Inconsolata', sans-serif;
+    font-size: 2rem;
+    line-height: 120%;
+    color: var(--base-gray-500);
+}
+
+.text-wrapper > p span {
+    color: var(--main-red);
+}
+
 .text-wrapper h1 {
     margin-top: .8rem;
+
+    font-family: 'Asap', sans-serif;
+    font-size: 5.6rem;
+    line-height: 120%;
+    color: var(--base-gray-600);
 }
 
 .text-wrapper p:last-child {
     width: 68rem;
 
     margin: 2rem auto 0;
+
+    font-size: 1.4rem;
+    line-height: 140%;
+    color: var(--base-gray-400);
 }
 
 .techs ul {
@@ -116,6 +147,24 @@ section > div {
     gap: 2.4rem;
 }
 
+#jobs span,
+#services span,
+#contact span {
+    font-family: 'Inconsolata';
+    font-size: 2rem;
+    line-height: 120%;
+    color: var(--main-red);
+}
+
+#jobs h4,
+#services h4,
+#contact {
+    font-family: 'Asap', sans-serif;
+    font-size: 2.4rem;
+    line-height: 120%;
+    color: var(--base-gray-600);
+}
+
 .job {
     /* background: var(--base-gray-300); */
     border: 1px solid purple;
@@ -131,20 +180,29 @@ section > div {
 }
 
 .job h5,
-.job p {
+.service h5 {
     text-align: start;
-}
 
-.job h5 {
-    margin-top: 2.4rem;
+    font-family: 'Asap';
+    font-size: 1.6rem;
+    line-height: 120%;
 
     color: var(--base-gray-600);
 }
 
-.job p {
+.job p,
+.service p {
+    text-align: start;
+
     margin-top: .8rem;
 
+    font-size: 1.4rem;
+    line-height: 140%;
     color: var(--base-gray-500);
+}
+
+.job h5 {
+    margin-top: 2.4rem;
 }
 
 .services {
@@ -152,6 +210,8 @@ section > div {
     grid-template-columns: repeat(3, 28rem);
     justify-content: center;
     gap: 2.4rem;
+
+    text-align: start;
 }
 
 .service {
@@ -160,17 +220,23 @@ section > div {
     border-radius: 1.2rem;
 }
 
-.service h5,
-.service p {
-    text-align: start;
-}
-
 .service h5 {
     margin-top: 2rem;
 }
 
 .service p {
     margin-top: .8rem;
+}
+
+#contact span {
+    color: var(--main-purple);
+}
+
+.paragraph-contact {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 1.6rem;
+    line-height: 140%;
+    color: var(--base-gray-500);
 }
 
 .social ul li {
@@ -199,6 +265,13 @@ section > div {
 
 .social ul a p {
     width: 28rem;
+
     text-align: start;
+
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 140%;
+    color: var(--base-gray-500);
 }
 

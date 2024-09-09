@@ -137,8 +137,14 @@ header.wrapper {
     /* object-fit: cover; */
 }
 
-header > img {
+header a img {
     margin-top: 9.4rem;
+
+    transition: transform 200ms;
+}
+
+header a img:hover {
+    transform: scale(1.2);
 }
 
 main.wrapper {
@@ -188,9 +194,15 @@ section > div {
 
 .job {
     background: var(--base-gray-300);
-
-    padding: 1.2rem;
+    padding: 1rem;
+    border: 2px solid var(--base-gray-300);
     border-radius: 1.2rem;
+}
+
+.job:hover {
+    transform: scale(1.02);
+    border: 2px solid var(--main-red);
+    cursor: pointer;
 }
 
 .job img {
@@ -294,6 +306,10 @@ section > div {
     margin: 0 auto;
 
     text-decoration: none;
+}
+
+.social ul li a:hover {
+    background: hsl(225, 11%, 22%);
 }
 
 .social ul a p {
